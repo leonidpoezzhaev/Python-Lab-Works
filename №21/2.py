@@ -6,3 +6,9 @@ def filter_gen1(s):
     for ch in s:
         if 'A' <= ch <= 'Z':
             yield ch
+
+gen = filter_gen1('ПРИВЕТHELLO')
+print(gen)
+
+for i in gen:
+    print(i)

@@ -56,3 +56,11 @@ class LinkedList:
                     else:
                         self._state = 'forward'
                         self._cur = self._head
+
+lst = LinkedList()
+for ch in ['A', 'B', 'C']:
+    lst.append(ch)
+
+it = iter(lst)
+for _ in range(9):
+    print(next(it))

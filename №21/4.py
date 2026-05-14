@@ -15,3 +15,6 @@ class SimpleIter1:
         value = self._lst[self._index]
         self._index -= 1
         return value
+
+for item in SimpleIter1([10, 20, 30, 40]):
+        print(item)
